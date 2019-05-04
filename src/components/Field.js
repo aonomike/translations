@@ -2,8 +2,8 @@ import React from 'react'
 import LanguageContext from '../contexts/LanguageContext'
 
 class Field extends React.Component {
-    renderText(value) {
-        return value === 'english' ? 'Name' : 'Naam'
+    renderText(language) {
+        return language === 'english' ? 'Name' : 'Naam'
     }
 
     render (){
@@ -12,7 +12,7 @@ class Field extends React.Component {
             <div className="ui field">
                 <label>
                     <LanguageContext.Consumer>
-                        {value => this.renderText(value)}
+                        {({language}) => this.renderText(language)}
                     </LanguageContext.Consumer>
                 </label>
                 <input/>
