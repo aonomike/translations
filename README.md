@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on Stephen Grider Udemy course on React and Redux. This is an implementation on the lesson to learn the use of the context system in react
 
 ## Available Scripts
 
